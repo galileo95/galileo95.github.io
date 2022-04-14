@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+     <nav>
+         <div class="navbar-left">
+            <ul>
+                <li>
+                   <a href="/">Home</a>
+                </li>
+                <li>
+                   <a href="/">Materias</a>
+                </li>
+                <li>
+                    <a href="/">Lecturas</a>
+                </li>
+            </ul>
+         </div>
+
+         <div class="navbar-right">
+             <ul>
+                 <li>nombreUsuario</li>
+             </ul>
+
+         </div>
+     </nav>
+    
+ <h1>Recursos clase física 2</h1>
+ <p>Los siguientes links te llevaran directo al archivo para descargar en google drive</p>
+ <h2>Tareas</h2>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1ddeqXySKlodcO9b5Et1IMWLSuydA9v2u/view?usp=drivesdk">Tarea 1 ejercicios de hidrostatica</a></li>
+        <li><a href="https://drive.google.com/file/d/1inqmSJqymQHVn9ZGxiAu6UwyvxAlx8Lj/view?usp=sharing">Tarea 2 ejercicios de hidrodinámica(resuelta)</a></li>
+    </ul>
+ 
+ 
+<h2>Otros recursos</h2>
+ <a href="https://drive.google.com/file/d/1HBL5zbbkP0IufmVWUswzus4bSK-04z0S/view?usp=drivesdk">Libro física general</a>
+ <h2>Calificaciónes abril 06. Elige tu nombre entre las opciones y da click en clickme para ver tu calificación</h2>
+ <h3>4A</h3>
+ <select name="alumno" id="nombre-a" >
+    <option value="1">Iván A </option>
+    <option value="2">Maria G</option>
+    <option value="3">Itzel N</option>
+    <option value="4">Alan U</option>
+    <option value="5">Manuel</option>
+    <option value="6">Alfonso</option>
+    <option value="7">Blanca V</option>
+    <option value="8">Brayan A</option>
+    <option value="9">Julia G </option>
+    <option value="10">Maria F</option>
+    <option value="11">Jatziri G </option>
+    <option value="12">Kristoff </option>
+    <option value="13">Maritza</option>
+    <option value="14">Evelyn</option>
+    <option value="15">Melissa</option>
+    <option value="16">Evelyn</option>
+    <option value="17">Paola</option>
+    <option value="18">Dafne</option>
+    <option value="19">Elizabeth</option>
+    <option value="20">Susana </option>
+    <option value="21">Maria F V</option>
+    <option value="22">Susana V</option>
+ </select>
+
+ <input id="clickMe" type="button" value="clickme" onclick="doFunction();"/>
+ <p id="ResultP"></p>
+
+ <h3>4B</h3>
+ <select name="alumno" id="nombre-b" >
+    <option value="1">Jose L. </option>
+    <option value="2">Kimberly I.</option>
+    <option value="3">Alejandro K.</option>
+    <option value="4">Carlos</option>
+    <option value="5">Alan</option>
+    <option value="6">Diana X.</option>
+    <option value="7">Maria F</option>
+    <option value="8">Jaquelin Iza</option>
+    <option value="9">Victor E.</option>
+    <option value="10">Estefany I</option>
+    <option value="11">Jade</option>
+    <option value="12">Gabriela F </option>
+    <option value="13">Sandra Y</option>
+    <option value="14">Ana V</option>
+    <option value="15">Wilian</option>
+    <option value="16">Fernanda P</option>
+    <option value="17">Angel O</option>
+    <option value="18">Mia I</option>
+    <option value="19">Jesus E</option>
+    <option value="20">Daniela</option>
+    <option value="21">Fatima N</option>
+    <option value="22">Naomy</option>
+ </select>
+
+ <input id="clickMe2" type="button" value="clickme" onclick="doFunction2();"/>
+ <p id="ResultP2"></p>
+ 
+ <script>
+     calificacionA=[
+        8.1,
+        8.5,
+        10,
+        8.3,
+        10,
+        10,
+        9.5,
+        9.6,
+        10,
+        7.7,
+        9.8,
+        6.7,
+        6.5,
+        8.0,
+        10,
+        8.0,
+        8.6,
+        8.0,
+        9.0,
+        10.0,
+        10.0,
+        8.8,
+     ];    document.getElementById("clickMe").onclick = function () {
+        // const inputPrice = document.getElementById("InputPrice");
+        // const priceValue = inputPrice.value;
+        
+        // const inputDiscount = document.getElementById("InputDiscount");
+        // const discountValue = inputDiscount.value;
+
+        // const p    9.5
+        const resultP = document.getElementById("ResultP");
+        resultP.innerText = "Calificación final fue "+calificacionA[document.getElementById('nombre-a').selectedIndex];
+}
+     calificacionB = [
+        8.6,
+        9.5,
+        8.3,
+        7.3,
+        9.0,
+        8.6,
+        7.8,
+        9.6,
+        8.8,
+        9.8,
+        10,
+        7.6,
+        8.8,
+        10,
+        9.5,
+        9.5,
+        8.2,
+        9.1,
+        9.1,
+        9.8,
+        8.0,
+        9.6,
+    ];
+  
+    document.getElementById("clickMe").onclick = function () {
+
+        const resultP = document.getElementById("ResultP");
+        resultP.innerText = "Calificación final fue "+calificacionA[document.getElementById('nombre-a').selectedIndex];
+}
+document.getElementById("clickMe2").onclick = function () {
+
+        const resultP2 = document.getElementById("ResultP2");
+        resultP2.innerText = "Calificación final fue "+calificacionB[document.getElementById('nombre-b').selectedIndex];
+}
+
+ </script>
+</body>
+</html>

@@ -1,20 +1,31 @@
+/* :root {
+    
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: aqua;
+    background-color: rgb(47, 46, 46);
+    color: whitesmoke;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+header {
+    text-align: center;
+    width: 100%;
+}
 nav {
-    background-color: limegreen;
+    width: 100%;
+    background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(55, 54, 54);
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
     display: flex;
     align-items: center;
     height: 60px;
@@ -25,20 +36,47 @@ nav ul {
 }
 
 .navbar-left ul {
-    margin-left: 12px;
+    margin-left: 5px;
 }
 
 .navbar-left ul li a,
-.navbar-right ul li a {
+.navbar-right ul li  {
   text-decoration: none;
-  color: brown;
-  border: 1px solid black;
-  padding: 8px;
+  color: rgb(183, 171, 171);
+  border: 1px solid rgb(55, 54, 54);
+  padding: 4px;
   border-radius: 8px;
+  margin: 0px 2px;
 }
 
 .navbar-left ul li a:hover,
-.navbar-right ul li a:hover {
-  border: 1px solid green;
-  color: green;
+.navbar-right ul li:hover {
+  border: 1px solid rgb(55, 54, 54);
+  color: black;
+  font-size: 2.0rem;
+  background-color: rgb(150, 120, 120);
+}
+main {
+    margin-top: 30px;
+    text-align: center;
+}
+.articles-container{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+
+}
+.articles-main {
+    width: 95%;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color:  rgb(150, 120, 120);
+    color: black;
+}
+.img-article {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
 }
