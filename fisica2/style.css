@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: rgb(80, 84, 84);
+    background-color: rgb(180, 219, 219);
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
