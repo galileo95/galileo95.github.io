@@ -66,27 +66,29 @@ main {
     background-color: rgb(47, 46, 46);
     text-align: center;
     width: 100%;
-    
 }
 .articles-container{
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     justify-content: center;
     justify-items: center;
     width: 100%;
+    padding: 0 10px;
 
 }
 .articles-main {
     width: 100%;
     padding: 20px;
     border-radius: 30px;
-    margin-top: 30px;
+    margin: 30px 30px;
     /* border: 1px solid rgb(150, 120, 120); */
     background-color:  black;
     color: whitesmoke;
 }
 .img-article {
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
 }
 footer {

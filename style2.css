@@ -1,0 +1,11 @@
+@media (min-width: 600px) {
+    .articles-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    
+    }
+}
