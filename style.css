@@ -19,27 +19,100 @@ header {
 }
 nav {
     width: 100%;
+    height: 60px;
     background-color: black;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(55, 54, 54);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0px;
-    display: flex;
     align-items: center;
-    height: 60px;
+    border-bottom: 1px solid rgb(55, 54, 54);
 }
 
+.menu {
+    /* list-style: none;
+    display: flex;*/
+    display: flex;
+    height: 100%;
+}
+.menu > li {
+    display: flex;
+    position: relative;
+    padding: 0 25px;
+    /* border: solid 1px white; */
+    /* place-content: center; */
+    /* align-content: center; */
+    /* line-height: 60px; */
+    /* /* margin: 10px 10px; */
+    /* padding: 10px; */
+    /* border: solid maroon 2px; */
+    /* border: 3px solid; */
+    /* border-radius: 2px; */
+}
+
+.menu > li a {
+    display: block;
+}
+
+
+.menu .menu-desplegable--container {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    border: 0px solid rgb(127, 70, 70);
+    border-radius: 0 0 10px 10px ;
+    transform: translate(0, 100%);
+    /* transform: translate(0, 100%); */
+    /*left: 0;
+    margin: 0px;
+    background-color: rgb(127, 70, 70); */
+    /* width: fit-content;
+    height: fit-content; */
+}
+.menu li:hover > .menu-desplegable--container {
+    display: block;
+}
+.menu-desplegable--container ul {
+    display: block;
+    position: relative;
+}
+
+.menu .menu-desplegable--container li a {
+    display: block;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu-desplegable--container li:hover > #secundary{
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    transform: translate(0, 0);
+    height: fit-content;
+    border: 1px solid blanchedalmond;
+} 
+/* ul li:hover > .menu-desplegable--container {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+} */
+
+#secundary ul {
+    display: block;
+}
+
+.menu-desplegable--container li {
+    display: block;
+    padding: 0;
+    margin: 0px;
+} 
 .navbar-left {
     display: flex;
 }
 
-.navbar-left ul {
-    margin-left: 5px;
-}
+
 
 .navbar-left ul li a,
 .navbar-right ul li  {
@@ -48,14 +121,13 @@ nav ul {
   border: 1px solid rgb(55, 54, 54);
   padding: 4px;
   border-radius: 8px;
-  margin: 0px 2px;
+  margin: 10px 2px; 
 }
 
 .navbar-left ul li a:hover,
 .navbar-right ul li:hover {
   border: 1px solid rgb(55, 54, 54);
   color: black;
-  font-size: 2.0rem;
   background-color: rgb(150, 120, 120);
 }
 header h1 {
