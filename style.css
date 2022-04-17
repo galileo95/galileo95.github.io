@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+li {
+    text-decoration: none;
+}
 body {
     background-color: black;
     color: whitesmoke;
@@ -29,29 +32,19 @@ nav {
 }
 
 .menu {
-    /* list-style: none;
-    display: flex;*/
     display: flex;
     height: 100%;
 }
 .menu > li {
     display: flex;
     position: relative;
-    padding: 0 25px;
-    /* border: solid 1px white; */
-    /* place-content: center; */
-    /* align-content: center; */
-    /* line-height: 60px; */
-    /* /* margin: 10px 10px; */
-    /* padding: 10px; */
-    /* border: solid maroon 2px; */
-    /* border: 3px solid; */
-    /* border-radius: 2px; */
+    padding: 0 10px;
+
 }
 
-.menu > li a {
+/* nav .menu > li a {
     display: block;
-}
+} */
 
 
 .menu .menu-desplegable--container {
@@ -59,7 +52,6 @@ nav {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
     background-color: black;
     border: 0px solid rgb(127, 70, 70);
     border-radius: 0 0 10px 10px ;
@@ -91,7 +83,6 @@ nav {
     top: 0px;
     transform: translate(0, 0);
     height: fit-content;
-    border: 1px solid blanchedalmond;
 } 
 /* ul li:hover > .menu-desplegable--container {
     display: block;
@@ -117,9 +108,9 @@ nav {
 .navbar-left ul li a,
 .navbar-right ul li  {
   text-decoration: none;
-  color: rgb(183, 171, 171);
-  border: 1px solid rgb(55, 54, 54);
-  padding: 4px;
+  color: whitesmoke;
+  background-color: rgb(19, 18, 18);
+  padding: 8px;
   border-radius: 8px;
   margin: 10px 2px; 
 }
