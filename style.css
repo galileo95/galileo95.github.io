@@ -141,14 +141,17 @@ main {
 
 }
 .articles-main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 20px;
+    padding: 20px 40px;
     border-radius: 30px;
     margin: 30px 30px;
     /* border: 1px solid rgb(150, 120, 120); */
     background-color:  black;
     color: whitesmoke;
     align-items: center;
+    justify-content: space-around;
 }
 .img-article {
     width: 100%;
@@ -160,7 +163,7 @@ main {
     align-content: space-between;
 }
 .description-article {
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 footer {
     text-align: center;
