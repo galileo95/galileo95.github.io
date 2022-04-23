@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: rgb(180, 219, 219);
@@ -12,6 +15,8 @@ nav {
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 2px solid gray;
+    height: 60px;
+    width: 100%;
 }
 
 nav ul {
@@ -20,9 +25,14 @@ nav ul {
     margin: 0;
     display: flex;
     align-items: center;
-    height: 60px;
+    /* height: 60px; */
 }
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
+}
 .navbar-left {
     display: flex;
 }
@@ -44,4 +54,29 @@ nav ul {
 .navbar-right ul li a:hover {
   border: 1px solid green;
   color: green;
+}
+.menu-desplegable {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+    /* width: 400%; */
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    /* bottom: -8px; */
+    left: -8px; 
+    /* bottom: -140px; */
+    bottom: 0px;
+    transform: translate(0, 100%);
+}
+.menu-desplegable li a {
+    display: block;
+    margin: 0;
+    /* border: none; */
+
+}
+li:hover > .menu-desplegable {
+    display: block;
 }
