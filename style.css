@@ -141,9 +141,11 @@ main {
 
 }
 .articles-main {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 500px;
     padding: 20px 40px;
     border-radius: 30px;
     margin: 30px 30px;
@@ -152,7 +154,15 @@ main {
     color: whitesmoke;
     align-items: center;
     justify-content: space-around;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
 }
+.articles-main:hover {
+    transform: rotateY(180deg);
+}
+/* .flip-article:hover  {
+    transform: rotateY(180deg);
+} */
 .img-article {
     width: 100%;
     max-width: 400px;
@@ -162,6 +172,18 @@ main {
     display: block;
     align-content: space-between;
 }
+.front {
+    position: absolute;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back {
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
 .description-article {
     font-size: 1rem;
 }
