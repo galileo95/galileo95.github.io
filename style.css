@@ -5,9 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* line-height: 1.2rem;
+    font-size: medium; */
 }
 li {
     text-decoration: none;
+    list-style: none;
 }
 body {
     background-color: black;

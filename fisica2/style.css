@@ -18,7 +18,9 @@ nav {
     height: 60px;
     width: 100%;
 }
-
+header h1 {
+    text-align: center;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -79,4 +81,11 @@ nav ul li {
 }
 li:hover > .menu-desplegable {
     display: block;
+}
+li {
+    font-size: 25px;
+    line-height: 2.5rem;
+}
+.main-tareas {
+    padding: 8px;
 }
