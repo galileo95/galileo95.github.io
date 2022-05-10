@@ -25,13 +25,14 @@ header {
 }
 nav {
     width: 100%;
-    height: 60px;
+    height: 65px;
     background-color: black;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(55, 54, 54);
+    font-size: 1.2rem;
 }
 
 .menu {
@@ -53,12 +54,14 @@ nav {
 .menu .menu-desplegable--container {
     display: none;
     position: absolute;
+    z-index: 9;
     left: 0;
     bottom: 0;
     background-color: black;
     border: 0px solid rgb(127, 70, 70);
     border-radius: 0 0 10px 10px ;
     transform: translate(0, 100%);
+    border-radius: 5px;
     /* transform: translate(0, 100%); */
     /*left: 0;
     margin: 0px;
@@ -71,7 +74,6 @@ nav {
 }
 .menu-desplegable--container ul {
     display: block;
-    position: relative;
 }
 
 .menu .menu-desplegable--container li a {
@@ -98,6 +100,7 @@ nav {
 }
 
 .menu-desplegable--container li {
+    position: relative;
     display: block;
     padding: 0;
     margin: 0px;
