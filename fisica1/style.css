@@ -89,3 +89,14 @@ li {
 .main-tareas {
     padding: 8px;
 }
+
+.link-to-video {
+    font: bold;
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.link-to-video:hover {
+    font-size: 2rem;
+    color: black;
+}
